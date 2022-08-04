@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+
+    <!-- page title -->
+    <title>Qilin's Portfolio - Home</title>
+
+    <!-- css -->
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/structure.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animation.css">
+
+    <!-- respnsive meta tag -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Miriam+Libre:wght@400;700&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+     <!-- add icon link -->
+    <link rel="icon" href="asset/logo.png" type = "image/x-icon">
+
+  </head>
+
+
+  <body class="body-home preload" style="margin-top: 100px;">
+
+    <!------------- preloader ------------->
+
+    <div class="loader-wrapper">
+      <img id="preloader" src="asset/preloader.gif" alt="">
+    </div>
+
+    <!-- Header -->
+
+    <header class="grid grid-pad" id="header-home">
+
+      <div class="col-1-1 header-content" >
+        <div>     
+            <h1 class="h1-home" id="h1-home"><span class="bold" id="home-title"><a href="index.html">Qilin Li</a></span><span id="h1-home-hide"> is a product designer <br> who explores intuitive digital experice to <br>bridge <span class="italic">people</span> & <span class="italic">the real world</span></span></h1>
+        </div>
+        <!-- header navigation -->
+        <nav>
+            <ul class="nav-main">
+              <li><a class="nav-item" href="index.html">Work</a></li>
+              <li><a class="nav-item" href="about.html">About</a></li>
+            </ul>
+        </nav>        
+
+      </div>      
+
+      <div class="col-1-1">
+        <hr class="hr-structure" id="hr-home">
+      </div>
+
+
+    </header>
+
+    <div class="padding-0px"></div>
+
+
+    <!-- Work List -->
+    <div id="home-worklist">
+      <div class="grid grid-pad h2-home" id="title-selected-work" >
+        <h2>Selected work</h2>
+      </div>
+
+      <div class="grid grid-pad" style="display:flex;">
+        <!-- Shimo -->
+        <div class="col-1-2">
+          <a href="shimo.html" class="box" id="box-shimo">
+            <div class="project-overview">
+              <div class="image-box" id="shimo-background">
+                <img class="img-project-overview" src="asset/home-shimo.png" alt="">
+              </div>            
+
+              <div class="work-discription">
+                <p class="p-home">internship work at Shimo Docs</p>
+                <h3 class="h3-home">Management Feature for Large Enterprise</h3>
+              </div></div>
+          </a>
+        </div>
+        <!-- HandinHand -->
+        <div class="col-1-2">
+          <a href="handinhand.html" class="box" id="box-handinhand">
+            <div class="project-overview">
+              <div class="image-box" id="handinhand-background">
+                <img class="img-project-overview" src="asset/home-handinhand.png" alt="">
+              </div>             
+              <div class="work-discription">
+                <p class="p-home">Individual, passion project</p>
+                <h3 class="h3-home">
+                Social APP for the Visually Impaired
+                </h3>
+              </div></div>
+          </a>
+        </div>
+      </div>        
+
+      <div class="grid grid-pad" style="display:flex;">
+        <!-- Lemonbox -->
+        <div class="col-1-2">
+          <a href="lemonbox.html" class="box" id="box-lemonbox">
+            <div class="project-overview">            
+              <div class="image-box" id="lemonbox-background">
+                <img class="img-project-overview" src="asset/home-lemonbox.png" alt="">
+              </div> 
+
+              <div class="work-discription">
+                <p class="p-home">UX Consultant work for Lemonbox</p>
+                <h3 class="h3-home">
+                Health Mangement for Returning Customer 
+                </h3>
+              </div></div>
+          </a>
+        </div>
+        <!-- dailyui -->
+        <div class="col-1-2">
+          <a href="dailyui.html" id="box-dailyui">
+            <div class="project-overview">
+              <div class="image-box">
+                <img class="img-project-overview" src="asset/home-dailyui.png" id="dailyui" alt="">
+              </div> 
+              <div class="work-discription">
+                <p class="p-home">Daily UI, Photography, Painting</p>
+                <h3 class="h3-home">
+                  Miscellaneous
+                </h3>
+              </div></div>
+          </a>
+        </div>
+      </div> 
+
+    </div>
+
+
+    <!------------ footer ------------>
+
+
+    <footer class="grid grid-pad" >
+      <div class="col-1-1">
+        <hr class="hr-structure">
+      </div>
+
+      <div class="col-1-1 footer-content">
+        <div>
+          <p id="footer-info">Design & Handcode with ☕ by Qilin Li</p>
+        </div>
+
+        <div>
+          <ul class="social-icon-list">
+            <li><a href="https://www.linkedin.com/in/qilin-li-896aa7111/" target="_blank">LinkedIn</a></li>
+            <li><a href="mailto:qilinli@umich.edu">Email</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+
+    <!------------ js interaction ------------>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="JS/interaction.js"></script>
+
+    <script>
+      
+      // When the user scrolls down from the top of the document, resize the header's font size
+
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 0 || document.documentElement.scrollTop >0) {
+          document.getElementById("h1-home").style.fontSize = "24px",
+          document.getElementById("h1-home-hide").style.display = "none",
+          document.getElementById("hr-home").style.display = "block";
+        } else {
+          document.getElementById("h1-home").style.fontSize = "48px",
+          document.getElementById("h1-home-hide").style.display = "inline",
+          document.getElementById("hr-home").style.display = "none";
+        }
+      }
+
+    </script>
+
+  </body>
+
+</html>

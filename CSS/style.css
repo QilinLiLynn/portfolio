@@ -1,0 +1,488 @@
+/************ universal **************/
+
+a{
+  text-decoration: none !important;
+  color: inherit;
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/***** color system *****/
+
+:root {
+
+  --brand: #212121;
+
+  --text-primary: #212121; /*title*/
+  --text-secondary: #424242; /*content*/
+  --text-note: #757575; /*note*/
+
+  --link-active:#212121;
+  --link-hover: #424242;
+  --link-inactive:#757575;
+
+  --surface-primary: #ffffff;
+  --surface-secondary: #eeeeee;
+
+  --hr-line: #FAFAFA;
+  --hr-decoration: #EEEEEE;
+
+}
+
+#body-shimo {
+
+  --brand: #1566d0;
+  --brand2: #1566d0;
+  --highlight-text:#e7f1ff;
+
+  --brand-hover: rgba(21, 102, 208, 0.8);
+  --brand-light: rgba(21, 102, 208, 0.3);
+
+}
+
+#body-lemonbox {
+
+  --brand:#fdf150;
+  --brand2: #212121;
+  --highlight-text: rgba(253, 241, 80, 0.5);
+
+  --brand-hover: var(--link-hover);
+  --brand-light: rgba(253, 241, 80, 0.4);  
+
+}
+
+#body-handinhand {
+
+  --brand: #2900C1;
+  --brand2: #2900C1;
+  --highlight-text: #f4f1ff;
+
+  --brand-hover: rgba(41, 0, 193, 0.8);
+  --brand-light: rgba(41, 0, 193, 0.3);
+
+}
+
+
+
+
+/************ header **************/
+
+
+.nav-to-home {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.02em;
+
+  color: var(--link-active);
+}
+
+.h1-home {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 110%;
+  letter-spacing: 0.02em;
+  margin-top: 3px;
+  margin-bottom: 3px;
+
+  color: var(--link-active);
+}
+
+.bold{
+  font-weight: 600 !important;
+  color: var(--text-primary) !important;
+}
+
+.italic {
+  font-style: italic !important;
+}
+
+.nav-item {
+  font-family: 'Miriam Libre';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 36px;
+  /* identical to box height, or 180% */
+  letter-spacing: 0.04em;
+
+  }
+
+.hr-structure{
+  border-top: 0.5px solid var(--hr-line);
+  margin: 0px !important;
+}
+
+
+/************ content **************/
+
+/****home****/
+
+.h2-home{
+  font-family: 'Miriam Libre';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 40px;
+  /* identical to box height, or 200% */
+
+  letter-spacing: 0.10em;
+  text-transform: uppercase;
+
+  color: var(--text-note);
+  padding-bottom: 40px;
+}
+
+.h3-home{
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 32px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+
+  color: var(--text-primary);
+
+  margin: 0;
+  padding: 0;
+
+
+}
+
+.p-home{
+  font-family: 'Miriam Libre';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  /* identical to box height */
+
+  letter-spacing: 0.04em;
+  text-transform: lowercase;
+
+  color: var(--text-secondary);
+
+  margin: 0;
+  padding: 0;
+
+}
+
+/****work****/
+
+/*brief*/
+
+.h1-work {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 120%;
+  letter-spacing: 0.02em;
+
+  color: var(--text-primary);
+
+  margin-bottom: 32px;
+
+}
+
+.p-work-brief {
+  font-family: 'Miriam Libre';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: 0.04em;
+  text-transform: lowercase;
+
+  color:var(--text-secondary);
+
+  margin-bottom: 48px;
+}
+
+.img-work-brief {
+  height: 480px !important;
+  width: 100%;
+  object-fit: cover !important;
+}
+
+
+/*table of content*/
+
+.title-a:hover , .title-aa:hover {
+  color:var(--brand-hover); 
+  border-left: 2px solid var(--brand-light);
+}
+
+
+.active>a{  
+  color: var(--brand2) !important; 
+  border-left: 2px solid var(--brand) !important;
+}
+
+.chapter-subtitle{
+  display: none;
+}
+
+.active>.chapter-subtitle{
+  display: flex;
+}
+
+.title-a {
+  font-family: 'Miriam Libre';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  /* identical to box height, or 30px */
+
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+
+  padding: 4px 12px;
+
+  color: var(--link-inactive);
+
+  border-left: 2px solid transparent;
+}
+
+
+.title-aa {
+  font-family: 'Miriam Libre';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  /* identical to box height, or 27px */
+
+  padding: 4px 32px;
+
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+
+  color: var(--link-inactive);
+
+  border-left: 2px solid transparent;
+}
+
+.nav-a {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.nav-aa {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
+/*content*/
+
+
+
+.h2-work{
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 45px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  color: var(--text-primary);
+  }
+
+.hr-work{
+  width: 100px;
+  height: 0px;
+
+  border: 1.5px solid var(--hr-decoration);
+}
+
+.h3-work{
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 0.01em;
+  text-transform: capitalize;
+
+  color: var(--text-primary);
+
+  margin-bottom: 12px;
+}
+
+.text-nonetrans{
+  text-transform: none !important;
+}
+
+.p-work{
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 150%;
+  /* or 36px */
+
+  color: var(--text-secondary);
+
+  margin-bottom: 12px;
+}
+
+.highlight-text{
+  background-color: var(--highlight-text);
+  color: var(--text-primary);
+}
+
+.li-work{
+  list-style-type: circle;
+  margin-top: 20px;
+  margin-left: 30px;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+
+.ul-para{
+  margin-bottom: 20px;
+}
+
+.h4-work {
+  font-size: 28px !important;
+  margin-top: 12px;
+
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  color: var(--text-primary);
+}
+
+/* other projects */
+
+
+.h2-other-project {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 40px;
+  text-transform: capitalize;
+
+  color: var(--text-primary);
+}
+
+.h3-other-project {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+
+  color: var(--text-primary);
+}
+
+figcaption {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 48px;
+
+  color: var(--text-note);
+  text-align: center;
+
+}
+
+
+/* about */
+
+.button-about {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  gap: 10px;
+
+  width: auto;
+  height: 56px;
+
+  border: 1px solid rgba(34, 34, 34, 0.2);
+  border-radius: 4px;
+
+  background-color: white;
+
+  font-family: 'Miriam Libre';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 36px;
+  /* identical to box height, or 225% */
+
+  letter-spacing: 0.04em;
+
+  color: var(--link-active);
+
+}
+
+.button-about:hover {
+  border-color: var(--link-hover);
+}
+
+
+/************ footer **************/
+
+
+.social-icon-list{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0px;
+  gap: 20px;
+
+  font-family: 'Miriam Libre';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 40px;
+  /* identical to box height, or 286% */
+  letter-spacing: 0.04em;
+  color: var(--text-note);
+}
+
+#footer-info {
+  font-family: 'Miriam Libre';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 40px;
+  /* identical to box height, or 286% */
+
+  letter-spacing: 0.04em;
+
+  color: var(--text-note);
+  }
+
+
