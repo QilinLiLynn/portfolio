@@ -1,0 +1,550 @@
+html {
+	scroll-behavior: smooth;
+	scroll-padding-top: 72px; /* height of sticky header */
+}
+
+
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0px;
+	position: relative;
+}
+
+.body-home {
+	gap: 80px;
+}
+
+.body-work {
+	gap: 40px;
+}
+
+/************ header **************/
+
+.padding-0px {
+	height: 0px
+}
+
+.header-small{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 72px;
+  padding: 0px;
+}
+
+.header-content{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+	width: 100%;
+	margin-top: 18px;
+	margin-bottom: 18px;
+}
+
+.nav-main{
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: flex-end;
+  gap: 20px;
+  list-style-type: none;
+}
+
+.nav-main-item{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+/************ content **************/
+
+/*home*/
+.project-overview {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+  margin: 0 0 80px 0 ;
+}
+
+.work-discription{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+}
+
+/*work*/
+
+
+.sticky-sidebar {
+  position: -webkit-sticky !important;
+  position: sticky !important;
+  top: 72px;
+
+  display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+	padding-top: 40px;
+
+	margin-bottom: 460px;
+}
+
+.chapter-subtitle {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+	padding: 0px;
+
+}
+
+.chapter{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 0px;
+	padding-bottom: 40px;
+}
+
+.content-block{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.sub-block{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  margin-top: 12px;
+}
+
+.block-hr{
+	padding-left: 0 !important;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+.paragraph-block{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 12px;  
+}
+
+
+.title-of-chapter{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 40px 0;
+  gap: 24px;
+}
+
+.main-content{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 0px;
+}
+
+.img-box-work{
+	width: 100%; display: flex; flex-direction: column; align-items: center;
+}
+
+.img-square-box{
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+/* other projects */
+
+.project-overview-small {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  margin: 0 0 40px 0 ;
+}
+
+
+.nav-to-other-project {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.other-project-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+  height: 80px;
+}
+
+/*about*/
+
+.about-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+	padding: 0px;
+	gap: 20px;
+}
+
+.about-text{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 0px;
+	gap: 10px;
+}
+
+
+/************ footer **************/
+
+.footer-content{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  height: 60px;
+}
+
+
+/************ adapative grid **************/
+
+/*
+  Simple Grid
+  Project Page - http://thisisdallas.github.com/Simple-Grid/
+  Author - Dallas Bass
+  Site - http://dallasbass.com
+*/
+
+
+[class*='grid'],
+[class*='col-'],
+[class*='mobile-'],
+.grid:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;	
+}
+
+[class*='col-'] {
+	float: left;
+  min-height: 1px;
+	padding-right: 40px; /* column-space */
+}
+
+[class*='col-'] [class*='col-']:last-child {
+	padding-right: 0;
+}
+
+.grid {
+	width: 100%;
+	max-width: 1378px;
+	min-width: 748px; /* when using padded grid on ipad in portrait mode, width should be viewport-width - padding = (768 - 20) = 748. actually, it should be even smaller to allow for padding of grid containing element */
+	margin: 0;
+}
+
+.grid:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.grid-pad {
+	padding-top: 0px;
+	padding-left: 40px; /* grid-space to left */
+	padding-right: 0; /* grid-space to right: (grid-space-left - column-space) e.g. 20px-20px=0 */
+}
+
+.push-right {
+	float: right;
+}
+
+/* Content Columns */
+
+.col-1-1 {
+	width: 100%;
+}
+.col-2-3, .col-8-12 {
+	width: 66.66%;
+}
+
+.col-1-2, .col-6-12 {
+	width: 50%;
+}
+
+.col-1-3, .col-4-12 {
+	width: 33.33%;
+}
+
+.col-1-4, .col-3-12 {
+	width: 25%;
+}
+
+.col-1-5 {
+	width: 20%;
+}
+
+.col-1-6, .col-2-12 {
+	width: 16.667%;
+}
+
+.col-1-7 {
+	width: 14.28%;
+}
+
+.col-1-8 {
+	width: 12.5%;
+}
+
+.col-1-9 {
+	width: 11.1%;
+}
+
+.col-1-10 {
+	width: 10%;
+}
+
+.col-1-11 {
+	width: 9.09%;
+}
+
+.col-1-12 {
+	width: 8.33%
+}
+
+/* Layout Columns */
+
+.col-11-12 {
+	width: 91.66%
+}
+
+.col-10-12 {
+	width: 83.333%;
+}
+
+.col-9-12 {
+	width: 75%;
+}
+
+.col-5-12 {
+	width: 41.66%;
+}
+
+.col-7-12 {
+	width: 58.33%
+}
+
+/* Pushing blocks */
+
+.push-2-3, .push-8-12 {
+	margin-left: 66.66%;
+}
+
+.push-1-2, .push-6-12 {
+	margin-left: 50%;
+}
+
+.push-1-3, .push-4-12 {
+	margin-left: 33.33%;
+}
+
+.push-1-4, .push-3-12 {
+	margin-left: 25%;
+}
+
+.push-1-5 {
+	margin-left: 20%;
+}
+
+.push-1-6, .push-2-12 {
+	margin-left: 16.667%;
+}
+
+.push-1-7 {
+	margin-left: 14.28%;
+}
+
+.push-1-8 {
+	margin-left: 12.5%;
+}
+
+.push-1-9 {
+	margin-left: 11.1%;
+}
+
+.push-1-10 {
+	margin-left: 10%;
+}
+
+.push-1-11 {
+	margin-left: 9.09%;
+}
+
+.push-1-12 {
+	margin-left: 8.33%
+}
+
+
+/*for small device*/
+@media handheld, only screen and (max-width: 767px) {
+	.grid {
+		width: 100%;
+		min-width: 0;
+		margin-left: 0;
+		margin-right: 0;
+		padding-left: 20px; /* grid-space to left */
+		padding-right: 10px; /* grid-space to right: (grid-space-left - column-space) e.g. 20px-10px=10px */
+		display: block !important;
+	}
+
+	.section-nav {
+		display: none; /*table of content invisible*/
+	}
+
+	#h1-home-hide {
+		display: none !important;
+	}
+
+	#h1-home {
+		font-size: 24px !important;
+	}
+
+	#hr-home {
+		display: block !important;
+	}
+
+	.body-home {
+		margin-top: 0px !important;
+		gap: 40px !important;
+	}
+
+	[class*='col-'] {
+		width: auto;
+		float: none;
+		margin: 10px 0;
+		padding-left: 0;
+		padding-right: 10px; /* column-space */
+	}
+
+	[class*='col-'] [class*='col-'] {
+		padding-right: 0;
+	}
+
+	/* Mobile Layout */
+
+	[class*='mobile-col-'] {
+		float: left;
+		margin: 0 0 10px;
+		padding-left: 0;
+		padding-right: 10px; /* column-space */
+		padding-bottom: 0;
+	}
+
+	.mobile-col-1-1 {
+		width: 100%;
+	}
+	.mobile-col-2-3, .mobile-col-8-12 {
+		width: 66.66%;
+	}
+
+	.mobile-col-1-2, .mobile-col-6-12 {
+		width: 50%;
+	}
+
+	.mobile-col-1-3, .mobile-col-4-12 {
+		width: 33.33%;
+	}
+
+	.mobile-col-1-4, .mobile-col-3-12 {
+		width: 25%;
+	}
+
+	.mobile-col-1-5 {
+		width: 20%;
+	}
+
+	.mobile-col-1-6, .mobile-col-2-12 {
+		width: 16.667%;
+	}
+
+	.mobile-col-1-7 {
+		width: 14.28%;
+	}
+
+	.mobile-col-1-8 {
+		width: 12.5%;
+	}
+
+	.mobile-col-1-9 {
+		width: 11.1%;
+	}
+
+	.mobile-col-1-10 {
+		width: 10%;
+	}
+
+	.mobile-col-1-11 {
+		width: 9.09%;
+	}
+
+	.mobile-col-1-12 {
+		width: 8.33%
+	}
+
+	/* Layout Columns */
+
+	.mobile-col-11-12 {
+		width: 91.66%
+	}
+
+	.mobile-col-10-12 {
+		width: 83.333%;
+	}
+
+	.mobile-col-9-12 {
+		width: 75%;
+	}
+
+	.mobile-col-5-12 {
+		width: 41.66%;
+	}
+
+	.mobile-col-7-12 {
+		width: 58.33%
+	}
+
+	.hide-on-mobile {
+		display: none !important;
+		width: 0;
+		height: 0;
+	}
+}
+
