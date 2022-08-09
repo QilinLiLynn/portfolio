@@ -6,6 +6,18 @@ $(window).on("load",function(){
      $("body").removeClass("preload");
 });
 
+//menu
+
+const currentLocation = location.href;
+const menuItem = document.querySelectorAll('.nav-main a')
+const menuLength = menuItem.length
+
+for (let i = 0; i < menuLength; i++) {
+  if(menuItem[i].href === currentLocation){
+    menuItem[i].classList.add('active');
+  }
+}
+
 
 $(document).ready(function () {
 
@@ -45,6 +57,7 @@ $(document).ready(function () {
           }, function(){
           $("#dailyui").css("opacity", "0.1");
         });
+
 
 
 });

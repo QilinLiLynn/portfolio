@@ -77,13 +77,14 @@ img {
   font-family: 'Mulish';
   font-style: normal;
   font-weight: 600;
-  font-size: 24px;
-  line-height: 36px;
+  font-size: 22px;
+  line-height: 28px;
   display: flex;
   align-items: center;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.20em;
+  text-transform: uppercase;
 
-  color: var(--link-active);
+  color: var(--link-inactive);
 }
 
 .h1-home {
@@ -115,7 +116,8 @@ img {
   font-size: 16px;
   line-height: 36px;
   /* identical to box height, or 180% */
-  letter-spacing: 0.04em;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
 
   }
 
@@ -179,6 +181,10 @@ img {
   margin: 0;
   padding: 0;
 
+}
+
+.nav-main .active {
+  color: var(--link-active);
 }
 
 /****work****/

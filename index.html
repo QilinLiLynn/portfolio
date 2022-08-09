@@ -3,6 +3,16 @@
 
   <head>
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-J71CP3Y66C"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-J71CP3Y66C');
+    </script>    
+
     <!-- page title -->
     <title>Qilin's Portfolio - Home</title>
 
@@ -167,26 +177,6 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="JS/interaction.js"></script>
-
-    <script>
-      
-      // When the user scrolls down from the top of the document, resize the header's font size
-
-      window.onscroll = function() {scrollFunction()};
-
-      function scrollFunction() {
-        if (document.body.scrollTop > 0 || document.documentElement.scrollTop >0) {
-          document.getElementById("h1-home").style.fontSize = "24px",
-          document.getElementById("h1-home-hide").style.display = "none",
-          document.getElementById("hr-home").style.display = "block";
-        } else {
-          document.getElementById("h1-home").style.fontSize = "48px",
-          document.getElementById("h1-home-hide").style.display = "inline",
-          document.getElementById("hr-home").style.display = "none";
-        }
-      }
-
-    </script>
 
   </body>
 

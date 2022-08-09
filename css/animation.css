@@ -31,17 +31,13 @@ affect nav*/
 
 /****设置滚动shrink效果 ****/
 
-header {
+#header-work {
   position: fixed;
   top: 0px;
   z-index:9;
   background-color: var(--surface-primary);
 }
 
-#header-home {
-  position:sticky;
-  transition: 0.35s ease-out;/* Add a transition effect (when scrolling - and font size is decreased) */
-}
 
 #h1-home {
   transition: 0.35s ease-out;
@@ -69,9 +65,9 @@ a:hover {
 /* static linked text style */
 .nav-main a { 
   background-color: transparent; 
-  box-shadow: var(--link-active) 0 -0px 0 0 inset;
+  box-shadow: var(--link-inactive) 0 -0px 0 0 inset;
   box-sizing: border-box; 
-  color: var(--link-active);
+  color: var(--link-inactive);
   cursor: pointer; 
   outline: 0;
   text-decoration: none;
