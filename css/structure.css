@@ -1,6 +1,6 @@
 html {
 	scroll-behavior: smooth;
-	scroll-padding-top: 72px; /* height of sticky header */
+	 /* scroll-padding-top: 72px; height of sticky header */
 }
 
 
@@ -86,7 +86,7 @@ body {
 .sticky-sidebar {
   position: -webkit-sticky !important;
   position: sticky !important;
-  top: 72px;
+  top: 0px;
 
   display: flex;
 	flex-direction: column;
@@ -95,6 +95,10 @@ body {
 	padding-top: 40px;
 
 	margin-bottom: 460px;
+}
+
+.work-brief {
+	margin-top: 40px !important;
 }
 
 .chapter-subtitle {
