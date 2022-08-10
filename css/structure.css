@@ -61,6 +61,10 @@ body {
 	align-items: center;
 }
 
+#hr-home{
+	display: none;
+}
+
 /************ content **************/
 
 /*home*/
@@ -445,6 +449,18 @@ body {
 		display: block !important;
 	}
 
+	#header-home {
+		line-height: 72px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.header-content{
+		align-items: center;
+	}
+
 	.body-home {
 		margin-top: 0px !important;
 		gap: 40px !important;
@@ -453,7 +469,7 @@ body {
 	[class*='col-'] {
 		width: auto;
 		float: none;
-		margin: 10px 0;
+		margin: 0;
 		padding-left: 0;
 		padding-right: 10px; /* column-space */
 	}
