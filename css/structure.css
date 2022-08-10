@@ -47,6 +47,7 @@ body {
 
 .header-home{
 	align-items: flex-start;
+}
 
 .nav-main{
   display: flex;
@@ -452,7 +453,7 @@ body {
 		display: block !important;
 	}
 
-	#header-home {
+	.header-home {
 		line-height: 72px;
 		display: flex;
 		flex-direction: row;
@@ -460,7 +461,7 @@ body {
 		align-items: center;
 	}
 
-	.header-home{
+	.header-content{
 		align-items: center;
 	}
 
