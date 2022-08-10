@@ -39,11 +39,14 @@ body {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	align-items: flex-start;
+	align-items: center;
 	width: 100%;
 	margin-top: 18px;
 	margin-bottom: 18px;
 }
+
+.header-home{
+	align-items: flex-start;
 
 .nav-main{
   display: flex;
@@ -457,7 +460,7 @@ body {
 		align-items: center;
 	}
 
-	.header-content{
+	.header-home{
 		align-items: center;
 	}
 
