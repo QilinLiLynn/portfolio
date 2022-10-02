@@ -38,7 +38,7 @@
   </head>
 
 
-  <body class="body-home preload" style="margin-top: 100px;">
+  <body class="body-work preload">
 
     <!------------- preloader ------------->
 
@@ -46,42 +46,66 @@
       <img id="preloader" src="asset/preloader.gif" alt="">
     </div>
 
-    <!-- Header -->
+    <!------------- header ------------------>
 
-    <header class="grid grid-pad" id="header-home">
+    <header class="grid grid-pad" >
 
-      <div class="col-1-1 header-home" >
-        <div style="padding-right: 240px;">     
-            <h1 class="h1-home" id="h1-home"><span class="bold">Lynn Li</span><span id="h1-home-hide"> is a product designer <br>who designs to bridge the <span class="italic">digital</span> & <br><span class="italic">physical</span> world</span></h1>
-        </div>
-        <!-- header navigation -->
+      <div class="col-1-1 header-small">
 
-        <div>
+        <div class="header-content">
+          <div>     
+              <a class="nav-to-home header-bolder" href="index.html">Lynn Li</a>
+          </div>
+          <!-- header navigation -->
           <nav>
-            <ul class="nav-main">
-              <li><a class="nav-item" href="index.html">Work</a></li>
-              <li><a class="nav-item" href="about.html">About</a></li>
-            </ul>
-          </nav>   
+              <ul class="nav-main">
+                <!-- link to work -->
+                <li>
+                  <a class="nav-item" href="index.html">
+                    Case study
+                  </a>
+                </li>
+
+                <li class="nav-decoration">/</li>
+
+                <!-- link to Experienment -->
+                <li>
+                  <a class="nav-item" href="dailyui.html">
+                    Experienment
+                  </a>
+                </li>
+
+                <li class="nav-decoration">/</li>
+
+                 <!-- link to about -->
+                <li>
+                  <a class="nav-item" href="about.html">
+                    About
+                  </a>
+                </li></ul>
+          </nav>
         </div>
-     
-
-      </div>      
-
-      <div class="col-1-1">
-        <hr class="hr-structure" id="hr-home">
       </div>
 
     </header>
 
-    <div class="padding-0px"></div>
+    <div class="grid grid-pad work-brief" >
+      <div class="col-10-12">
+        <h1 class="h1-home">
+          Hello! I’m <span class="bold">Lynn</span>, a product designer. 
+          <br>I design to bridge the <span class="italic">digital & physical</span> world
+        </h1>
+        <p class="h2-home">
+          <a href="about.html">More About Me</a>
+        </p>
+      </div>
 
+
+    </div>
 
     <!-- Work List -->
     <div id="home-worklist">
-      <div class="grid grid-pad h2-home" id="title-selected-work" >
-        <h2>Selected work ↓ </h2>
-      </div>
+
 
       <div class="grid grid-pad" style="display:flex;">
         <!-- Shimo -->

@@ -77,11 +77,11 @@ img {
 
 
 .nav-to-home {
-  font-family: 'Mulish';
+  font-family: 'Miriam Libre';
   font-style: normal;
-  font-weight: 600;
-  font-size: 22px;
-  line-height: 28px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 22px;
   display: flex;
   align-items: center;
   letter-spacing: 0.20em;
@@ -90,16 +90,24 @@ img {
   color: var(--link-inactive);
 }
 
+.header-bolder {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  height: 22px;
+  border-bottom: 0.1em solid #aaaaaa;
+}
+
 .h1-home {
   font-family: 'Mulish';
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 48px;
-  line-height: 110%;
+  line-height: 120%;
   letter-spacing: 0.02em;
 
-  margin-top: 3px;
-  margin-bottom: 3px;
+  padding-bottom: 40px;
 
   color: var(--link-active);
 }
@@ -120,10 +128,32 @@ img {
   font-size: 16px;
   line-height: 36px;
   /* identical to box height, or 180% */
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
 
   }
+
+.nav-decoration {
+  /* / */
+
+  width: 7px;
+  height: 44px;
+
+  font-family: 'Miriam Libre';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 36px;
+  /* identical to box height, or 275% */
+
+  letter-spacing: 0.04em;
+
+  display: flex;
+  align-items: center;
+
+  color: rgba(34, 34, 34, 0.2);
+
+}
 
 .hr-structure{
   border-top: 0.5px solid var(--hr-line);
@@ -139,12 +169,11 @@ img {
   font-family: 'Miriam Libre';
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 40px;
   /* identical to box height, or 200% */
 
-  letter-spacing: 0.04em;
-
+  letter-spacing: 0.06em;
 
   color: var(--text-note);
   padding-bottom: 40px;
@@ -180,7 +209,7 @@ img {
   letter-spacing: 0.04em;
   text-transform: lowercase;
 
-  color: var(--text-secondary);
+  color: var(--text-note);
 
   margin: 0;
   padding: 0;
@@ -422,6 +451,10 @@ figcaption {
   color: var(--text-note);
   text-align: center;
 
+}
+
+.lightbox-img {
+  cursor: zoom-in;
 }
 
 
