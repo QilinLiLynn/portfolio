@@ -46,16 +46,10 @@ $(document).ready(function () {
           $("#lemonbox-background").css("background", "#EEEEEE");
         });
 
-        $("#box-dailyui").hover(function(){
-          $("#dailyui").css("filter", "saturate(100%)");
+        $("#box-brand").hover(function(){
+          $("#brand-background").css("background", "linear-gradient(90deg, #FFDA8D -2.87%, rgba(255, 249, 238, 0.874837) 25.53%, #FFFFFF 72.01%)");
           }, function(){
-          $("#dailyui").css("filter", "saturate(0%)");
-        });
-
-        $("#box-dailyui").hover(function(){
-          $("#dailyui").css("opacity", "1");
-          }, function(){
-          $("#dailyui").css("opacity", "0.1");
+          $("#brand-background").css("background", "#EEEEEE");
         });
 
 
