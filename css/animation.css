@@ -125,42 +125,57 @@ a:hover {
 
 /************ fadeupin **************/
 
-@keyframes fadeInUp {
-  from {
-      transform: translate3d(0,40px,0)
-  }
-
-  to {
-      transform: translate3d(0,0,0);
-      opacity: 1
-  }
-}
-
-@-webkit-keyframes fadeInUp {
-  from {
-      transform: translate3d(0,40px,0)
-  }
-
-  to {
-      transform: translate3d(0,0,0);
-      opacity: 1
-  }
-}
-
-.animated {
-  animation-duration: 1s;
-  animation-fill-mode: both;
-  -webkit-animation-duration: 1s;
-  -webkit-animation-fill-mode: both
-}
-
-.animatedFadeInUp {
-  opacity: 0
-}
-
-.fadeInUp {
+.appear {
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
   opacity: 0;
-  animation-name: fadeInUp;
-  -webkit-animation-name: fadeInUp;
+  -webkit-transform: translateY(40px);
+          transform: translateY(40px);
 }
 
+.appear.inview {
+  opacity: 1;
+  -webkit-transform: none;
+          transform: none;
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
+}
+
+.appear2 {
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+  opacity: 0;
+  -webkit-transform: translateY(60px);
+          transform: translateY(60px);
+}
+
+.appear2.inview2 {
+  opacity: 1;
+  -webkit-transform: none;
+          transform: none;
+}
+
+.appear2.inview2:nth-child(1) {
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+}
+
+.appear2.inview2:nth-child(2) {
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+
+.appear2.inview2:nth-child(3) {
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+}
+
+.appear2.inview2:nth-child(4) {
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
+}
+
+.appear2.inview2:nth-child(5) {
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+}
