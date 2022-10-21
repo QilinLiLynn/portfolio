@@ -1,3 +1,62 @@
+$(document).ready(function () {
+
+          const funFacts = [
+            "I dived into the ocean with one breath to a depth of 90 feet (after systematical training)",
+            "I spend most of my free time in the climbing gym",
+            "I easily get into flow states when I’m designing, climbing, and cooking",
+            "My favorite season is autumn",
+            "I’m an introvert but feel energetic after talking to interesting people and hearing new ideas",
+            "My MBTI is INFJ",
+            "I love the outdoors, but I’m still scared when seeing an insect in my tent",
+            "I cried when I saw my design was launched during my first internship",
+            "I have lived in four cities since I was born: Wuhan, Beijing, Shanghai, Ann Arbor",
+            "I enjoy observing people on the street when I’m alone",
+            "My favourite artist is James Turrell",
+            "My favourite podcast is Design Matters with Debbie Millman"
+          ];
+
+          var randomFactIndex = Math.floor(Math.random() * funFacts.length);
+          $('#preloader-title').text("Fun fact about Lynn #"+(randomFactIndex+1));
+          $('#preloader-content').html(funFacts[randomFactIndex]);
+
+
+
+
+  //set tag hover interaction
+          $(".box").hover(function(){
+            $(this).find(".img-project-overview").css("filter", "saturate(100%)");
+            }, function(){
+            $(this).find(".img-project-overview").css("filter", "saturate(90%)");
+          });
+  
+          $("#box-shimo").hover(function(){
+            $("#shimo-background").css("background", "linear-gradient(360deg, #2C3033 -0.09%, #54585D 100%)");
+          }, function(){$("#shimo-background").css("background", "#EEEEEE");
+          });
+          
+  
+          $("#box-handinhand").hover(function(){
+            $("#handinhand-background").css("background", "linear-gradient(90deg, #D2D5EC 0%, #E5E7F4 100%)");
+            }, function(){
+            $("#handinhand-background").css("background", "#EEEEEE");
+          });
+  
+          $("#box-lemonbox").hover(function(){
+            $("#lemonbox-background").css("background", "linear-gradient(261.65deg, #FFFFFF -3.33%, #FDF150 78.83%)");
+            }, function(){
+            $("#lemonbox-background").css("background", "#EEEEEE");
+          });
+  
+          $("#box-brand").hover(function(){
+            $("#brand-background").css("background", "linear-gradient(90deg, #FFDA8D -2.87%, rgba(255, 249, 238, 0.874837) 25.53%, #FFFFFF 72.01%)");
+            }, function(){
+            $("#brand-background").css("background", "#EEEEEE");
+          });
+  
+  
+  
+  });
+
 
 //preloader
 
@@ -19,42 +78,7 @@ for (let i = 0; i < menuLength; i++) {
 }
 
 
-$(document).ready(function () {
 
-//set tag hover interaction
-        $(".box").hover(function(){
-          $(this).find(".img-project-overview").css("filter", "saturate(100%)");
-          }, function(){
-          $(this).find(".img-project-overview").css("filter", "saturate(90%)");
-        });
-
-        $("#box-shimo").hover(function(){
-          $("#shimo-background").css("background", "linear-gradient(360deg, #2C3033 -0.09%, #54585D 100%)");
-        }, function(){$("#shimo-background").css("background", "#EEEEEE");
-        });
-        
-
-        $("#box-handinhand").hover(function(){
-          $("#handinhand-background").css("background", "linear-gradient(90deg, #D2D5EC 0%, #E5E7F4 100%)");
-          }, function(){
-          $("#handinhand-background").css("background", "#EEEEEE");
-        });
-
-        $("#box-lemonbox").hover(function(){
-          $("#lemonbox-background").css("background", "linear-gradient(261.65deg, #FFFFFF -3.33%, #FDF150 78.83%)");
-          }, function(){
-          $("#lemonbox-background").css("background", "#EEEEEE");
-        });
-
-        $("#box-brand").hover(function(){
-          $("#brand-background").css("background", "linear-gradient(90deg, #FFDA8D -2.87%, rgba(255, 249, 238, 0.874837) 25.53%, #FFFFFF 72.01%)");
-          }, function(){
-          $("#brand-background").css("background", "#EEEEEE");
-        });
-
-
-
-});
 
 
 
