@@ -1,24 +1,67 @@
+//preloader
+
+
+setTimeout(function(){ 
+  $(".loader-wrapper").fadeOut(200);
+  $("body").removeClass("preload");
+}, 4000); 
+
+          //fade-in-effect
+
+          const appear = document.querySelector('.appear'); 
+          const cb = function(entries){
+            entries.forEach(entry => {
+              if(entry.isIntersecting){
+                entry.target.classList.add('inview');
+                entry.unobserve(entry.target)
+              }
+            });
+          }
+          const io3 = new IntersectionObserver(cb);
+          io3.observe(appear);
+
+          //
+
+          const items = document.querySelectorAll('.appear2');
+
+          const active = function(entries){
+              entries.forEach(entry => {
+                  if(entry.isIntersecting){
+                  entry.target.classList.add('inview2'); 
+                  }else{
+                      entry.target.classList.remove('inview2'); 
+                  }
+              });
+          }
+          const io2 = new IntersectionObserver(active);
+          for(let i=0; i < items.length; i++){
+              io2.observe(items[i]);
+          }
+
+          //
+
+
 $(document).ready(function () {
 
           const funFacts = [
-            "I dived into the ocean with one breath to a depth of 90 feet (after systematical training)",
-            "I spend most of my free time in the climbing gym",
+            "I dived into the ocean with one breath to a depth of 90 feet in 2019",
+            "I spend most of my free time climbing",
             "I easily get into flow states when I’m designing, climbing, and cooking",
             "My favorite season is autumn",
-            "I’m an introvert but feel energetic after talking to interesting people and hearing new ideas",
-            "My MBTI is INFJ",
+            "I’m an introvert but feel energetic after talking to interesting people and receiving new ideas",
             "I love the outdoors, but I’m still scared when seeing an insect in my tent",
             "I cried when I saw my design was launched during my first internship",
-            "I have lived in four cities since I was born: Wuhan, Beijing, Shanghai, Ann Arbor",
-            "I enjoy observing people on the street when I’m alone",
+            "Moving from Beijing to Ann Abor, it's my first time living in a small town, but I love it :)",
+            "I enjoy observing people on streets when I’m alone",
             "My favourite artist is James Turrell",
-            "My favourite podcast is Design Matters with Debbie Millman"
+            "My favourite podcast is Design Matters with Debbie Millman",
+            "My dream job in middle school was to become an architect",
+            "I can easily remember the past roads even though I only walked through them once"
           ];
 
           var randomFactIndex = Math.floor(Math.random() * funFacts.length);
-          $('#preloader-title').text("Fun fact about Lynn #"+(randomFactIndex+1));
+          $('#preloader-title').text("Fun fact about Lynn #"+(randomFactIndex+3));
           $('#preloader-content').html(funFacts[randomFactIndex]);
-
 
 
 
@@ -52,18 +95,12 @@ $(document).ready(function () {
             }, function(){
             $("#brand-background").css("background", "#EEEEEE");
           });
-  
-  
+
+
   
   });
 
 
-//preloader
-
-$(window).on("load",function(){
-     $(".loader-wrapper").fadeOut(200);
-     $("body").removeClass("preload");
-});
 
 //menu
 
@@ -78,52 +115,6 @@ for (let i = 0; i < menuLength; i++) {
 }
 
 
-//fade-in-effect
-
-const appear = document.querySelector('.appear'); 
-const cb = function(entries){
-  entries.forEach(entry => {
-    if(entry.isIntersecting){
-      entry.target.classList.add('inview');
-    }else{
-      entry.target.classList.remove('inview');
-    }
-  });
-}
-const io = new IntersectionObserver(cb);
-io.observe(appear);
-
-//
-
-const items = document.querySelectorAll('.appear2');
-
-const active = function(entries){
-    entries.forEach(entry => {
-        if(entry.isIntersecting){
-        entry.target.classList.add('inview2'); 
-        }else{
-            entry.target.classList.remove('inview2'); 
-        }
-    });
-}
-const io2 = new IntersectionObserver(active);
- for(let i=0; i < items.length; i++){
-    io2.observe(items[i]);
- }
-
- //
-
-const appear3 = document.querySelector('.appear3'); 
-const cb3 = function(entries){
-  entries.forEach(entry => {
-    if(entry.isIntersecting){
-      entry.target.classList.add('inview');
-      entry.unobserve(entry.target)
-    }
-  });
-}
-const io3 = new IntersectionObserver(cb3);
-io3.observe(appear3);
 
 
 
