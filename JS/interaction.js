@@ -90,10 +90,10 @@ $(document).ready(function () {
             $("#lemonbox-background").css("background", "#EEEEEE");
           });
   
-          $("#box-brand").hover(function(){
-            $("#brand-background").css("background", "linear-gradient(90deg, #FFDA8D -2.87%, rgba(255, 249, 238, 0.874837) 25.53%, #FFFFFF 72.01%)");
+          $("#box-urban").hover(function(){
+            $("#urban-background").css("background", "url(asset/home-urbanmist-bg.png)");
             }, function(){
-            $("#brand-background").css("background", "#EEEEEE");
+            $("#urban-background").css("background", "#EEEEEE");
           });
 
 
