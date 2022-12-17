@@ -126,8 +126,8 @@ a:hover {
 /************ fadeupin **************/
 
 .appear {
-  -webkit-transition: all 0.8s;
-  transition: all 0.8s;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
   opacity: 0;
   -webkit-transform: translateY(40px);
           transform: translateY(40px);
@@ -142,8 +142,8 @@ a:hover {
 }
 
 .appear2 {
-  -webkit-transition: all 0.8s;
-  transition: all 0.8s;
+  -webkit-transition: all  0.6s;
+  transition: all  0.6s;
   opacity: 0;
   -webkit-transform: translateY(60px);
           transform: translateY(60px);
@@ -156,26 +156,21 @@ a:hover {
 }
 
 .appear2.inview2:nth-child(1) {
-  -webkit-transition-delay: 0.2s;
-          transition-delay: 0.2s;
+  -webkit-transition-delay: 0.15s;
+          transition-delay: 0.15s;
 }
 
 .appear2.inview2:nth-child(2) {
-  -webkit-transition-delay: 0.4s;
-          transition-delay: 0.4s;
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
 }
 
 .appear2.inview2:nth-child(3) {
-  -webkit-transition-delay: 0.6s;
-          transition-delay: 0.6s;
+  -webkit-transition-delay: 0.45s;
+          transition-delay: 0.45s;
 }
 
 .appear2.inview2:nth-child(4) {
-  -webkit-transition-delay: 0.4s;
-          transition-delay: 0.4s;
-}
-
-.appear2.inview2:nth-child(5) {
-  -webkit-transition-delay: 0.5s;
-          transition-delay: 0.5s;
+  -webkit-transition-delay: 0.60s;
+          transition-delay: 0.60s;
 }

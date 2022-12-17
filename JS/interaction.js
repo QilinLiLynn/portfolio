@@ -46,13 +46,13 @@ $(document).ready(function () {
           const funFacts = [
             "I dived into the ocean with one breath to a depth of 90 feet in 2019",
             "I spend most of my free time climbing",
-            "I easily get into flow states when I’m designing, climbing, and cooking",
+            "I easily get into flow states when designing, climbing, and cooking",
             "My favorite season is autumn",
             "I’m an introvert but feel energetic after talking to interesting people and receiving new ideas",
             "I love the outdoors, but I’m still scared when seeing an insect in my tent",
             "I cried when I saw my design was launched during my first internship",
             "Moving from Beijing to Ann Abor, it's my first time living in a small town, but I love it :)",
-            "I enjoy observing people on streets when I’m alone",
+            "I enjoy people-watching in a coffee shop",
             "My favourite artist is James Turrell",
             "My favourite podcast is Design Matters with Debbie Millman",
             "My dream job in middle school was to become an architect",
@@ -60,7 +60,7 @@ $(document).ready(function () {
           ];
 
           var randomFactIndex = Math.floor(Math.random() * funFacts.length);
-          $('#preloader-title').text("Fun fact about Lynn #"+(randomFactIndex+3));
+          $('#preloader-title').text("Fun fact about Lynn #"+(randomFactIndex+1));
           $('#preloader-content').html(funFacts[randomFactIndex]);
 
 
