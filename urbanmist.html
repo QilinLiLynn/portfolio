@@ -38,7 +38,7 @@
 
   </head>
 
-  <body class="body-work preload" id="body-lemonbox">
+  <body class="body-work preload" id="body-urbanmist">
 
     <!------------- preloader ------------------>
 
@@ -96,21 +96,379 @@
     <!-- Work Brief -->
 
     <div class="grid grid-pad work-brief">
+
       <div class="col-8-12">
         <h1 class="h1-work appear">
-          Explore and Share Unique Spots in the City
+          Create Unique City Exploration Experience with AR
         </h1>
         <p class="p-work-brief">
-          Augmented Reality, UX/UI design, autumn 2023
+          UX/UI design, Augmented Reality, autumn 2022
         </p>
       </div>
 
       <div class="col-1-1">
-        <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRKAO9yYfPiSYqXH2tQxZA2AzCZDpl26R1thyOegP82VLGtdI15Mnmxp1Ef-YDAV0sxzha6HTrQuOfR/embed?start=false&loop=false&delayms=3000" frameborder="0" width="1298" height="767" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+        <img class="img-work-brief" src="asset/urbanmist/title.png" alt="">
       </div>
-      
+
     </div>
 
+     <!-- Work -->
+
+     <div class="grid grid-pad" style="display:flex">
+
+      <!--Table of Content -->
+      <nav class="col-3-12 section-nav">
+
+        <ul id="sidebar" class="sticky-sidebar">
+          <!--nav-chaper 1 -->
+          <li class="nav-a">
+                <a class="title-a" href="#overview">overview</a>
+                <ul class="chapter-subtitle">
+                  <li class="nav-aa"><a class="title-aa" href="#problem">problem</a></li>
+                  <li class="nav-aa"><a class="title-aa" href="#solution">solution</a></li>
+                  <li class="nav-aa"><a class="title-aa" href="#approach">approach</a></li>                 
+                </ul> 
+          </li>
+
+          <!--nav-chaper 2-->
+          <li class="nav-a">
+                <a class="title-a" href="#research-ideate">Research & Ideate</a>
+                <ul class="chapter-subtitle">
+                  <li class="nav-aa"><a class="title-aa" href="#research-method">Method</a></li>
+                  <li class="nav-aa"><a class="title-aa" href="#research-problem">problem</a></li>
+                  <li class="nav-aa"><a class="title-aa" href="#ideation">Ideation</a></li>
+                </ul> 
+          </li> 
+          
+          <!--nav-chaper 3-->
+          <li class="nav-a">
+                <a class="title-a" href="#process">Design Process</a>
+                <ul class="chapter-subtitle">
+                  <li class="nav-aa"><a class="title-aa" href="#userflow">User Flow</a></li>
+                  <li class="nav-aa"><a class="title-aa" href="#sketch-to-hifi">sketch to hi-fi</a></li>
+                  <li class="nav-aa"><a class="title-aa" href="#iterations">iterations</a></li>
+                  <!--<li class="nav-aa"><a class="title-aa" href="#whatif">What If</a></li>-->                                      
+                </ul> 
+          </li> 
+
+          <!--nav-chaper 4-->
+          <li class="nav-a">
+                <a class="title-a" href="#usability-testing">Usability Testing</a>
+                <ul class="chapter-subtitle">
+                  <li class="nav-aa"><a class="title-aa" href="#usability-method">Method</a></li>
+                  <li class="nav-aa"><a class="title-aa" href="#result">Result</a></li>                              
+                </ul> 
+          </li>
+
+          <!--nav-chaper 5-->
+          <li class="nav-a">
+                <a class="title-a" href="#latest-design">Latest Design</a>
+                <ul class="chapter-subtitle">
+                  <li class="nav-aa"><a class="title-aa" href="#explorer-flow">Explorer flow</a></li>
+                  <li class="nav-aa"><a class="title-aa" href="#creator-flow">Creator flow</a></li>
+                  <li class="nav-aa"><a class="title-aa" href="#design-system">Design system</a></li>                                  
+                </ul> 
+          </li>
+
+          <!--nav-chaper 6-->
+          <li class="nav-a">
+                <a class="title-a" href="#reflection">Reflection</a>
+                <ul class="chapter-subtitle">
+                  <li class="nav-aa"><a class="title-aa" href="#next-step">Next step</a></li>
+                  <li class="nav-aa"><a class="title-aa" href="#what-i-learnt">What I learnt</a></li>
+                  <li class="nav-aa"><a class="title-aa" href="#different">What I could do</a></li>                                
+                </ul> 
+          </li>
+
+
+        </ul>
+
+      </nav>
+
+      <!-- Content -->
+      <div class="col-9-12 main-content">
+
+        <!--Chapter 1-->
+        <section class="chapter" id="overview">       
+
+          <div class="title-of-chapter"> 
+            <h2 class="h2-work">overview</h2>
+            <div>
+             <hr class="hr-work">            
+            </div>                 
+          </div>   
+
+          <section id="problem" class="content-block" >
+            <h3 class="h3-work">What’s the Problem?</h3>
+            <div class="paragraph-block">
+              <p class="p-work">To explore new possibility of location-based augmented reality experience</p>
+            </div>
+          </section>
+
+          <section id="solution" class="content-block">
+            <h3 class="h3-work">Solution</h3>
+            <div class="sub-block">
+              <p class="p-work">A mobile app where users can share and explore puzzles in their city. </p>
+              <ul class="p-work">
+                  <li class="li-work"><span class="bold">Explorer</span> could find interesting spots and solving a puzzle about them.</li>
+                  <li class="li-work"><span class="bold">Creator</span> could share anecdotes about spots by creating a puzzle for explorers.</li>
+              </ul>
+              
+            <button class="button-about" onclick="location.href='#latest-design'">Jump to Latest Design</button>
+
+          </div>
+
+          </section>
+
+          <section id="approach" class="content-block">
+            <h3 class="h3-work" >approach</h3>
+            <div class="paragraph-block">
+              <div class="grid grid-pad" style="padding-left: 0px;">
+                <div class="col-1-2">
+                  <p class="p-work"><span class="bold">My Role</span><br>Product & AR Designer</p>
+                  <p class="p-work"><span class="bold">Team</span><br>Collaborate with Ruikun Wang (UX Researcher) </p>
+                </div>
+                <div class="col-1-2">
+                  <p class="p-work"><span class="bold">Duration</span><br>Sept-Dec 2022, 4 month</p>
+                  <p class="p-work"><span class="bold">Tool</span><br>Miro, Figma, Unity, Final Cut Pro</p>
+                </div>
+              </div>
+
+              <p class="p-work"><span class="bold">Process</span></p>
+              <img src="asset/urbanmist/approach.png" alt="design process">      
+            </div>
+            
+          </section>
+
+        </section>
+
+        <!--Chapter 2-->
+        <section class="chapter" id="research-ideate">
+
+          <div class="title-of-chapter"> 
+            <h2 class="h2-work" >Research & Ideate</h2>
+            <div>
+             <hr class="hr-work">            
+            </div>                 
+          </div>
+          
+        
+
+          <section id="research-method" class="content-block">
+            <h3 class="h3-work" style="padding-bottom: 32px;" >Methods we used</h3>
+            <div class="paragraph-block">
+              <div class="grid grid-pad" style="padding-left: 0px; ">
+                <div class="col-1-2 paragraph-block">
+                  <p class="p-work"><span class="bold">Literature review</span></p>
+                    <p class="p-work" style="margin-bottom: 24px;">We looked through papers on location-based augmented reality experiences, which helped us understand what had already been done.</p>
+                  <p class="p-work"><span class="bold ">Semi-structured interview </span></p>
+                    <p class="p-work">With possible problem space contexts coming from previous second-hand research, we interviewed 6 participants to identify the problem we wanted to focus on.</p>
+                </div>
+                <div class="col-1-2 paragraph-block">
+                  <p class="p-work"><span class="bold ">Competitive analysis</span></p>
+                  <p class="p-work" style="margin-bottom: 24px;">We looked through products related to the topic of augmented reality and location-based experience to find opportunities as well as inspiration.</p>
+                  <p class="p-work"><span class="bold">Synthesis and brainstorm</span></p>
+                  <p class="p-work">We went through all interview transcripts and synthesized key insights, which informed us of the problem. Then we brainstormed on the possible solutions.</p>
+                </div>
+              </div>    
+            </div>
+          </section>
+
+          <section id="research-problem" class="content-block">
+            <div class="sub-block">
+              <h3 class="h3-work">Problem we decided on</h3>
+              <p class="h4-work bold appear2" style="padding: 40px; font-weight: 800 !important;"><span class="highlight-text">" How might we encourage people to share and explore unique places in the city and stories behind them with augmented reality? "</span></p>
+            </div>
+
+            <div class="sub-block">
+              <p class="h4-work">Why there’s AR opportunities?</p>
+              <ul class="p-work ul-para">
+                <li class="li-work"><span class="bold">Single-user experience</span>: Most world-scale AR application provides single-user experience, which relied on contents either generated by algorithm(Google map AR) or premade 3D character (PokemenGo)</li>
+                <li class="li-work"><span class="bold">Limited to certain area</span>: Most AR application related to city exploration is limited to certain area/place (Berlin Wall App)</li>
+                <li class="li-work"><span class="bold">Increased accuracy</span> in world annotation</li>
+              </ul>
+              <img src="asset/urbanmist/competitive-analysis.png" alt="Competitive Analysis">
+            </div>
+
+            <div class="sub-block">
+              <p class="h4-work">What’s the user problem?</p>
+              <p class="p-work">During our user interview, we discovered that people hope to find <span class="highlight-text">unique and unexpected spots in the city</span>, which they usually get to <span class="highlight-text">know by word-of-mouth recommendations</span>. On the other hand, the city lacks an interesting way of presenting its stories and anecdotes, which leads people to <span class="highlight-text">have little interest in regular historical sites</span>.</p>   
+              <p class="p-work">Therefore, our guiding question is how might we encourage people to share and explore unique places in the city and stories behind them with augmented reality?</p>      
+            </div>
+            
+          </section>
+
+          <section id="ideation" class="content-block">
+            <h3 class="h3-work">Ideation</h3>
+            <p class="p-work">We look into different city exploration experience, we identified 3 typical patterns we could continue work on and decided to work on the puzzle-solving approach. There are roles in this methods: <span class="highlight-text bold">explorer</span> could find interesting spots and solving a puzzle about them; <span class="highlight-text bold">creator</span> could share anecdotes about spots by creating a puzzle for explorers.</p>   
+            <img src="asset/urbanmist/Ideation.png" alt="ideation" >
+          </section>
+
+        </section>
+
+        <!--Chapter 3-->
+        <section class="chapter" id="process">
+
+          <div class="title-of-chapter"> 
+            <h2 class="h2-work" >Design Process</h2>
+            <div>
+             <hr class="hr-work">            
+            </div>                 
+          </div>  
+
+          <section id="userflow" class="content-block">
+            <h3 class="h3-work">User Flow</h3>
+            <p class="p-work">Organize users' action and required information </p>
+            <img src="asset/urbanmist/userflow.png" alt="user flow" >
+           
+          </section>
+
+          <section id="sketch-to-hifi" class="content-block">
+            <h3 class="h3-work">sketch to hi-fi</h3>
+            <a href="asset/urbanmist/Sketch2hi-fi.png" data-lightbox="urbanmist" data-title="Sketch to Hi-fi"><img src="asset/urbanmist/Sketch2hi-fi.png" alt="Sketch to Hi-fi" class="lightbox-img"></a>
+          </section>
+
+          <section id="iterations" class="content-block">
+            <h3 class="h3-work">Iterations</h3>
+            <p class="h4-work">1 - How to help user quickly find place or puzzle that arouses their interest?</p>
+            <a href="asset/urbanmist/iteration1.png" data-lightbox="urbanmist" data-title="Iteration 1"><img src="asset/urbanmist/iteration1.png" alt="iteration1" class="lightbox-img"></a>
+
+            <p class="h4-work">2 - How to guide user to find the hint in the spot and solve the puzzle? </p>
+            <p class="p-work">Key iteration: Status bar, notification illustration, and mapping of them</p>
+            <a href="asset/urbanmist/iteration2.png" data-lightbox="urbanmist" data-title="Iteration 2"><img src="asset/urbanmist/iteration2.png" alt="iteration2" class="lightbox-img"></a>
+
+            <p class="p-work">Design rationale on the AR guide form</p>
+            <a href="asset/urbanmist/iteration3.png" data-lightbox="urbanmist" data-title="Iteration 3"><img src="asset/urbanmist/iteration3.png" alt="iteration3" class="lightbox-img"></a>
+
+            <p class="p-work">Design rationale on how to trigger next step when user find the AR hint</p>
+            <a href="asset/urbanmist/iteration4.png" data-lightbox="urbanmist" data-title="Iteration 4"><img src="asset/urbanmist/iteration4.png" alt="iteration4" class="lightbox-img"></a>
+
+            <p class="h4-work">3 - How to make the whole creation process easy and effortless? </p>
+            <p class="p-work">Iteration of creation flow</p>
+            <a href="asset/urbanmist/iteration5.png" data-lightbox="urbanmist" data-title="Iteration 5"><img src="asset/urbanmist/iteration5.png" alt="iteration5" class="lightbox-img"></a>
+
+            <p class="p-work">Iteration of the structure of each page</p>
+            <a href="asset/urbanmist/iteration6.png" data-lightbox="urbanmist" data-title="Iteration 6"><img src="asset/urbanmist/iteration6.png" alt="iteration6" class="lightbox-img"></a>
+
+
+          </section>
+
+          <!--<section id="whatif" class="content-block">
+            <h3 class="h3-work">What If ... ?</h3>
+            <p class="h4-work">What if the explorer cannot find the hint or solve the puzzle?</p>
+            <p class="h4-work">What if the creator is not on the spot when creating the puzzle?</p>
+          </section>-->
+
+        </section>
+
+
+        <!--Chapter 4-->
+        <section class="chapter" id="usability-testing">
+
+          <div class="title-of-chapter"> 
+            <h2 class="h2-work">Usability Test</h2>
+            <div>
+             <hr class="hr-work">            
+            </div>                 
+          </div>
+          
+          <section id="usability-method" class="content-block">
+            <h3 class="h3-work">Method</h3>
+            <p class="p-work">
+              We conducted <span class="highlight-text">task-based</span> usability testing which includes 4 major tasks in our system with a <span class="highlight-text">think-aloud method</span>. In the first round, we test interactive lo-fi prototype with 4 participants. In the second round, we test interactive hi-fi prototype and implemented AR prototype with 7 different participants.</p>
+          </section>
+
+          <section id="result" class="content-block">
+            <h3 class="h3-work">Result</h3>
+            <img src="asset/urbanmist/Usability.png" alt="usability test result" >
+          </section>
+
+        </section>
+
+        
+        <!--Chapter 5-->
+        <section class="chapter" id="latest-design">
+
+          <div class="title-of-chapter"> 
+            <h2 class="h2-work">Latest Design</h2>
+            <div>
+             <hr class="hr-work">            
+            </div>                 
+          </div>
+          
+          <section id="explorer-flow" class="content-block" style="width: 100%; ">
+            <h3 class="h3-work">Explorer flow</h3>
+            <iframe style="width: 100%; height: 600px;"  src="https://www.youtube.com/embed/-tr-yQpNbyc" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </section>
+
+          <section id="creator-flow" class="content-block" style="width: 100%; ">
+            <h3 class="h3-work">Creator flow</h3>
+            <iframe style="width: 100%; height: 600px;"  src="https://www.youtube.com/embed/01HonsaJVt4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </section>
+
+          <section id="design-system" class="content-block">
+            <h3 class="h3-work">Design system</h3>
+            <p class="p-work">I created a design system and component asset from scratch to ensure the consistency of the visual and feeling of our product. Our goal is to create <span class=" highlight-text">a sense of playfulness and curiosity.</span> </p>
+
+            <h4 class="h4-work">Moodboard</p>
+            <a href="asset/urbanmist/Moodboard.png" data-lightbox="urbanmist" data-title="Moodboard"><img src="asset/urbanmist/Moodboard.png" alt="Moodboard" class="lightbox-img"></a>
+
+            <h4 class="h4-work">Design system</p>
+            <a href="asset/urbanmist/designsystem1.png" data-lightbox="urbanmist" data-title="Design system 1"><img src="asset/urbanmist/designsystem1.png" alt="design system 1" class="lightbox-img"></a>
+            <a href="asset/urbanmist/designsystem2.png" data-lightbox="urbanmist" data-title="Design system 2"><img src="asset/urbanmist/designsystem2.png" alt="design system 2" class="lightbox-img"></a>
+          </section>
+
+        </section>
+
+
+
+        <!--Chapter 6-->
+        <section class="chapter" id="reflection">
+
+          <div class="title-of-chapter"> 
+            <h2 class="h2-work">Reflection</h2>
+            <div>
+             <hr class="hr-work">            
+            </div>                 
+          </div>
+
+
+          <section id="next-step" class="content-block">
+            <h3 class="h3-work">Next step</h3>
+            <ul class="p-work ul-para">
+              <li class="li-work"><span class="bold highlight-text">Adaptive color solution</span>: During our testing, we found that the color of AR footprint will blend into certain surface, which need adaptive color solution to make it more distinctive wherever it’s.</li>
+              <li class="li-work"><span class="bold highlight-text">More flexibility for creator</span>: Currently the creator could only choose from two options, under which there’s no other options for style. In the future, I would like to add more options of hint style for the creator to make the experience more fun and personalized.</li>
+              <li class="li-work"><span class="bold highlight-text">Motivation system</span>: More fun and engaging motivation system need to be designed to further encourage users to participate in the exploration and creation.</li>
+            </ul>
+          </section>
+          
+          <section id="what-i-learnt" class="content-block">
+            <h3 class="h3-work">What I learnt</h3>
+            <ul class="p-work ul-para">
+              <li class="li-work"><span class="bold highlight-text">Different process for technology-driven problem</span>: For our problem of exploring the new possibility of world-scale AR experience, user research is not that useful. Therefore, we conducted literature reviews and competitive analyses to uncover location-based AR opportunities. Later, we use user research to further reduce the problem's scope and verify our hypothesis.</li>
+              <li class="li-work"><span class="bold highlight-text">Prototype and test AR features often and early</span>: During the lo-fi testing phase, we used Figma to build a static AR mockup and test, which didn't provide much useful user insight. When we brought the prototype building in Unity to the users, we discovered many interaction problems we didn't realize in the previous phases. I realized that AR is built and used in a 3D environment. It needs spatial thinking and awareness than a pure 2D interface, as well as rapid prototyping, testing, and iteration.</li>
+              <li class="li-work"><span class="bold highlight-text">Visualize and document ideas</span>: During our discussions, we often have different ideas and perspectives toward our design. It was beneficial when we visualized all our thoughts and listed all the trade-offs in our discussions. The proper document also helps us to think and reflect.</li>
+            </ul>
+
+          </section>
+
+          <section id="different" class="content-block">
+            <h3 class="h3-work">What I could do differently</h3>
+            <p class="p-work">This project is my schoolwork for the Interaction Design course. Looking back at the end of the semester with the new knowledge and input I gained, I realized the things I could do differently:</p>
+            <ul class="p-work ul-para">
+                <li class="li-work"><span class="bold">Read more broadly in the research phase</span></li>
+                <li class="li-work"><span class="bold">Test early with the paper prototype</span></li>
+                <li class="li-work"><span class="bold">Proper prepare and document usability testing</span></li>
+            </ul>
+          </section>
+
+
+        </section>   
+
+
+      </div>
+
+    </div>
 
 
     <!-- View Other Projects -->
@@ -145,18 +503,18 @@
               </a>
             </div>
   
-            <!-- Lemonbox -->
+            <!-- purpose -->
             <div class="col-1-3 appear2">
-              <a href="lemonbox.html" class="box" id="box-lemonbox">
+              <a href="purpose.html" class="box" id="box-lemonbox">
                 <div class="project-overview-small">            
                   <div class="image-box" id="lemonbox-background">
-                    <img class="img-project-overview" src="asset/home-lemonbox.png" alt="">
+                    <img class="img-project-overview" src="asset/home-purpose.png" alt="">
                   </div> 
   
                   <div class="work-discription">
-                    <p class="p-home">UX Consultant work for Lemonbox</p>
+                    <p class="p-home">entrepreneurship, UX/UI design</p>
                     <h3 class="h3-other-project">
-                    Health Mangement for Returning Customer 
+                      Help Travel Enthusiasts Save for Future Trips 
                     </h3>
                   </div></div>
               </a>

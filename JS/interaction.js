@@ -44,13 +44,13 @@ setTimeout(function(){
 $(document).ready(function () {
 
           const funFacts = [
-            "I dived into the ocean with one breath to a depth of 90 feet in 2019",
+            "I dived to 90 feet with one breath in 2019",
             "I spend most of my free time climbing",
             "I easily get into flow states when designing, climbing, and cooking",
             "My favorite season is autumn",
             "I’m an introvert but feel energetic after talking to interesting people and receiving new ideas",
-            "I love the outdoors, but I’m still scared when seeing an insect in my tent",
-            "I cried when I saw my design was launched during my first internship",
+            "I love the outdoors but still feel scared when seeing an insect in my tent",
+            "I cried when my design was launched during my first internship.",
             "Moving from Beijing to Ann Abor, it's my first time living in a small town, but I love it :)",
             "I enjoy people-watching in a coffee shop",
             "My favourite artist is James Turrell",
@@ -85,13 +85,13 @@ $(document).ready(function () {
           });
   
           $("#box-lemonbox").hover(function(){
-            $("#lemonbox-background").css("background", "linear-gradient(261.65deg, #FFFFFF -3.33%, #FDF150 78.83%)");
+            $("#lemonbox-background").css("background", "linear-gradient(100.5deg, #FF6854 -0.89%, #FEA484 98.07%)");
             }, function(){
             $("#lemonbox-background").css("background", "#EEEEEE");
           });
   
           $("#box-urban").hover(function(){
-            $("#urban-background").css("background", "url(asset/home-urbanmist-bg.png)");
+            $("#urban-background").css("background", "linear-gradient(255.27deg, #F7C000 0.97%, #FFC700 0.98%, #FFFFFF 103.9%)");
             }, function(){
             $("#urban-background").css("background", "#EEEEEE");
           });
