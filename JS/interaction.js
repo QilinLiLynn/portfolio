@@ -85,7 +85,7 @@ $(document).ready(function () {
           });
   
           $("#box-lemonbox").hover(function(){
-            $("#lemonbox-background").css("background", "linear-gradient(100.5deg, #FF6854 -0.89%, #FEA484 98.07%)");
+            $("#lemonbox-background").css("background", "linear-gradient(261.65deg, #FFFFFF -3.33%, #FDF150 78.83%)");
             }, function(){
             $("#lemonbox-background").css("background", "#EEEEEE");
           });
