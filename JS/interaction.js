@@ -45,16 +45,16 @@ $(document).ready(function () {
 
           const funFacts = [
             "I dived to 90 feet with one breath in 2019",
-            "I spend most of my free time climbing",
+            "I love to spend a whole day in the climbing gym, climbing and watching other climbers",
             "I easily get into flow states when designing, climbing, and cooking",
             "My favorite season is autumn",
             "I’m an introvert but feel energetic after talking to interesting people and receiving new ideas",
             "I love the outdoors but still feel scared when seeing an insect in my tent",
-            "I cried when my design was launched during my first internship.",
-            "Moving from Beijing to Ann Abor, it's my first time living in a small town, but I love it :)",
-            "I enjoy people-watching in a coffee shop",
+            "I cried when my design was launched during my first internship",
+            "Moving from Beijing to Ann Abor, it's my first time living in a small town, but I love it",
             "My favourite artist is James Turrell",
             "My favourite podcast is Design Matters with Debbie Millman",
+            "My favourite painter is David Hockney",
             "My dream job in middle school was to become an architect",
             "I can easily remember the past roads even though I only walked through them once"
           ];
