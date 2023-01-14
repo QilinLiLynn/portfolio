@@ -6,26 +6,31 @@ setTimeout(function(){
   $("body").removeClass("preload");
 }, 4000); 
 
-          //fade-in-effect
 
-          const appear = document.querySelector('.appear'); 
-          const cb = function(entries){
-            entries.forEach(entry => {
+//fade-in-effect
+
+const appear = document.querySelector('.appear'); 
+const cb = function(entries){
+            
+  
+entries.forEach(entry => {
               if(entry.isIntersecting){
                 entry.target.classList.add('inview');
                 entry.unobserve(entry.target)
               }
             });
           }
-          const io3 = new IntersectionObserver(cb);
-          io3.observe(appear);
 
-          //
+const io3 = new IntersectionObserver(cb);
+io3.observe(appear);
 
-          const items = document.querySelectorAll('.appear2');
+//
 
-          const active = function(entries){
-              entries.forEach(entry => {
+const items = document.querySelectorAll('.appear2');
+
+const active = function(entries){
+  
+entries.forEach(entry => {
                   if(entry.isIntersecting){
                   entry.target.classList.add('inview2'); 
                   }else{
@@ -33,12 +38,14 @@ setTimeout(function(){
                   }
               });
           }
-          const io2 = new IntersectionObserver(active);
-          for(let i=0; i < items.length; i++){
+          
+const io2 = new IntersectionObserver(active);
+
+for(let i=0; i < items.length; i++){
               io2.observe(items[i]);
           }
 
-          //
+//
 
 
 $(document).ready(function () {
@@ -54,7 +61,6 @@ $(document).ready(function () {
             "Moving from Beijing to Ann Abor, it's my first time living in a small town, but I love it",
             "My favourite artist is James Turrell",
             "My favourite podcast is Design Matters with Debbie Millman",
-            "My favourite painter is David Hockney",
             "My dream job in middle school was to become an architect",
             "I can easily remember the past roads even though I only walked through them once"
           ];
@@ -113,6 +119,9 @@ for (let i = 0; i < menuLength; i++) {
     menuItem[i].classList.add('active');
   }
 }
+
+
+
 
 
 
