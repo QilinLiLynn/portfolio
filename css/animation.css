@@ -139,7 +139,10 @@ a:hover {
           transform: none;
   -webkit-transition-delay: 4.4s;
           transition-delay: 4.4s;
+
 }
+
+
 
 .appear2 {
   -webkit-transition: all  0.6s;
