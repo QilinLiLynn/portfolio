@@ -137,8 +137,8 @@ a:hover {
   opacity: 1;
   -webkit-transform: none;
           transform: none;
-  -webkit-transition-delay: 4.6s;
-          transition-delay: 4.6s;
+  -webkit-transition-delay: 4.4s;
+          transition-delay: 4.4s;
 }
 
 .appear2 {
