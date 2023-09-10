@@ -51,18 +51,18 @@ for(let i=0; i < items.length; i++){
 $(document).ready(function () {
 
           const funFacts = [
-            "I dived to 90 feet with one breath in 2019",
-            "I love to spend a whole day in the climbing gym, climbing and watching other climbers",
-            "I easily get into flow states when designing, climbing, and cooking",
-            "My favorite season is autumn",
-            "I’m an introvert but feel energetic after talking to interesting people and receiving new ideas",
-            "I love the outdoors but still feel scared when seeing an insect in my tent",
-            "I cried when my design was launched during my first internship",
-            "Moving from Beijing to Ann Abor, it's my first time living in a small town, but I love it",
-            "My favourite artist is James Turrell",
-            "My favourite podcast is Design Matters with Debbie Millman",
-            "My dream job in middle school was to become an architect",
-            "I can easily remember the past roads even though I only walked through them once"
+            "Dove 90 feet on one breath in 2019 🌊",
+            "Gym rat, climbing all day 🧗‍♂️",
+            "Easily in the flow while designing, climbing, and cooking 🎨🍳",
+            "Autumn is my fave season 🍂",
+            "Introvert with an energy boost from interesting convos 💬",
+            "Outdoor lover who's scared of insects 🏕️",
+            "Cried when my first design was launched 😭",
+            "From Beijing to Ann Arbor, small town lover ❤️",
+            "Obsessed with James Turrell's art 🎨",
+            "Addicted to 'Design Matters with Debbie Millman' podcast 🎙️",
+            "Middle school dream: Architect 🏗️",
+            "One-time path walker with a photographic memory 🚶‍♂️🧠"
           ];
 
           var randomFactIndex = Math.floor(Math.random() * funFacts.length);
@@ -89,11 +89,11 @@ $(document).ready(function () {
             }, function(){
             $("#handinhand-background").css("background", "#EEEEEE");
           });
-  
-          $("#box-lemonbox").hover(function(){
-            $("#lemonbox-background").css("background", "linear-gradient(261.65deg, #FFFFFF -3.33%, #FDF150 78.83%)");
+          
+          $("#box-alibaba").hover(function(){
+            $("#alibaba-background").css("background", "linear-gradient(287deg, #FFC26D 1.59%, #FF8500 97.05%)");
             }, function(){
-            $("#lemonbox-background").css("background", "#EEEEEE");
+            $("#alibaba-background").css("background", "#EEEEEE");
           });
   
           $("#box-urban").hover(function(){
